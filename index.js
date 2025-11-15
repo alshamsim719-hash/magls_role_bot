@@ -1,3 +1,16 @@
+// ---- Keep Alive for Replit ----
+const express = require("express");
+const server = express();
+
+server.get("/", (req, res) => {
+  res.send("MAGLS ALSHAMSI bot is running 24/7!");
+});
+
+server.listen(3000, () => {
+  console.log("🌐 Keep-alive server started (24/7 mode)");
+});
+// --------------------------------
+
 require('dotenv').config();
 const { 
   Client, 
